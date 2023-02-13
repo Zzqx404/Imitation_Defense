@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: order-sidecar  #实际上是jsordersidecar
+server: #自己
+  port: 8020
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: nodeJS-order-sidecar
+sidecar:
+  port: 8010 #监听对象jsorder
+  health-uri: http://localhost:${sidecar.port}/health

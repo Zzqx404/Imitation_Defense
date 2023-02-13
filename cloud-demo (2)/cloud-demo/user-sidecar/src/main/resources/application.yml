@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: user-sidecar
+#    client:
+#      ipAddress: localhost
+
+server: #自己
+  port: 8051
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka
+
+    # 这两个配置都没问题
+    fetch-registry: true
+    registry-fetch-interval-seconds: 3
+    # 新加的全量拉取配置
+#     disable-delta: true
+  instance:
+    instance-id: Java-user-sidecar
+    lease-expiration-duration-in-seconds: 6
+    lease-renewal-interval-in-seconds: 3
+
+#    prefer-ip-address: true
+sidecar:
+
+  port: 8081 #监听对象
+  health-uri: http://localhost:${sidecar.port}/health
+
+
+#zuul:
+#  routes:
+#    sideuser:
+#      path: /user/**
+#      service-id: userservice
+      #      service-id: userservice
+
+#    sideorder:
+#      path: /orderside/**
+#      service-id: order-sidecar

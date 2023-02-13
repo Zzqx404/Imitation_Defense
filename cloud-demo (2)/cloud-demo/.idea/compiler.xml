@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pyuser-sidecar" />
+        <module name="pyorder-sidecar" />
+        <module name="Clearn" />
+        <module name="user-sidecar" />
+        <module name="jsordersidecar" />
+        <module name="jsusersidecar" />
+        <module name="order-service" />
+        <module name="user-service" />
+        <module name="zuul" />
+        <module name="Controller" />
+        <module name="eureka-server" />
+        <module name="order-sidecar" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Controller (1)" target="1.7" />
+      <module name="JSorder" target="1.8" />
+      <module name="pyorder-sidecar (1)" target="1.7" />
+      <module name="pyuser-sidecar (1)" target="1.7" />
+      <module name="sidecar1" target="1.7" />
+      <module name="sidecar1 (1)" target="1.7" />
+      <module name="sidecar1 (2)" target="1.7" />
+      <module name="sidecardemo1" target="1.8" />
+      <module name="user-sidecar (1)" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Clearn" options="-parameters" />
+      <module name="Controller" options="-parameters" />
+      <module name="Controller (1)" options="-parameters" />
+      <module name="JSorder" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="jsordersidecar" options="-parameters" />
+      <module name="jsusersidecar" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="order-sidecar" options="-parameters" />
+      <module name="pyorder-sidecar" options="-parameters" />
+      <module name="pyorder-sidecar (1)" options="-parameters" />
+      <module name="pyuser-sidecar" options="-parameters" />
+      <module name="pyuser-sidecar (1)" options="-parameters" />
+      <module name="sidecar1 (2)" options="-parameters" />
+      <module name="sidecardemo1" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="user-sidecar" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

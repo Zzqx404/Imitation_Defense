@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: order-sidecar
+#    name: pyorder-sidecar
+server: #自己
+  port: 8060
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: pyorder-sidecar
+sidecar:
+  port: 8090 #监听对象
+  health-uri: http://localhost:${sidecar.port}/health
+
+#zuul:
+#  routes:
+#    sideuser:
+#      path: /user/**
+#      service-id:
+      #      service-id: userservice
+
+#    sideorder:
+#      path: /order/**
+#      service-id: order-sidecar
+

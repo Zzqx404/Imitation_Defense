@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-sidecar  #实际上是jsusersidecar
+server: #自己
+  port: 8021
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: nodeJS-user-sidecar
+sidecar:
+  port: 8011 #监听对象
+  health-uri: http://localhost:${sidecar.port}/health
+

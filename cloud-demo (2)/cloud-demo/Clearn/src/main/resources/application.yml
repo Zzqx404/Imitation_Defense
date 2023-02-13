@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Clearn
+
+server:
+  port: 9300
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10086/eureka
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+#    #????
+#    lease-renewal-interval-in-seconds: 30
+#    #????
+#    lease-expiration-duration-in-seconds: 90
+
+
+
+
+
+
+

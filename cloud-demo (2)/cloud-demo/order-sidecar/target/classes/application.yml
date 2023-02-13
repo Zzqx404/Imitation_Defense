@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: order-sidecar
+#    profiles:
+#      active: "dev"
+#    cloud:
+#      loadbalancer:
+#        ribbon:
+#          enabled: false
+#      client:
+#        ipAddress: localhost
+
+server: #自己
+  port: 8050
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10086/eureka
+
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    instance-id: Java-orderservice-sidecar
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+
+sidecar:
+  port: 8080 #监听对象
+  health-uri: http://localhost:${sidecar.port}/health
+
+
+

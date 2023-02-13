@@ -1,0 +1,36 @@
+server:
+  port: 9100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    # 这两个配置都没问题
+    fetch-registry: true
+    # 少一个ribbon wctmd
+    registry-fetch-interval-seconds: 3
+
+  instance:
+    instance-id: ZUUL
+
+spring:
+  application:
+    name: zuul
+zuul:
+  routes:
+    sideuser:
+      path: /user/**
+      service-id: user-sidecar
+      #      service-id: userservice
+
+    sideorder:
+      path: /order/**
+      service-id: order-sidecar
+  retryable: true
+
+
+
+
+
+
+
+

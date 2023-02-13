@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Clearn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jsorder-sidecar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jsuser-sidecar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-sidecar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-sidecar/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pyorder-sidecar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pyorder-sidecar/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pyuser-sidecar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pyuser-sidecar/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-sidecar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-sidecar/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
